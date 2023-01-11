@@ -6,10 +6,7 @@ if (session_id() === "") {
 ?>
 
 <?php
-$time_pre = microtime(true);
-
-
-
+//$time_pre = microtime(true);
 ?>
 
 
@@ -110,12 +107,12 @@ echo "<script>window.location.href='orderConfirmation.php';</script>";
         <h3>Amount Paid = ".'$'."$priceSum AUD</h3>";
 
 
-        $setTimeBefore = microtime(true);
+        //$setTimeBefore = microtime(true);
 
         //include("sendOrderToMe.php");
 
 
-        $setTimeAfter = microtime(true);
+        //$setTimeAfter = microtime(true);
 
 
         //order details
@@ -167,14 +164,15 @@ paid_amount_currency,txn_id,payment_status,created,modified) VALUES
     echo "<script>window.location.href='issue-with-order.php';</script>";
 }
 
-
+/*
 $time_post = microtime(true);
 $exec_time = $time_post - $time_pre;
 $_SESSION['time'] = $exec_time;
+*/
 
-$setTime = $setTimeAfter-$setTimeBefore;
+//$setTime = $setTimeAfter-$setTimeBefore;
 
-$_SESSION['setTime'] = $setTime;
+//$_SESSION['setTime'] = $setTime;
 
 
 $_SESSION['statusMsg'] = $statusMsg;

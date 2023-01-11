@@ -44,5 +44,4 @@ if (session_id() === "") {
 
 
 <?php
-print("here2");
 include("submit.php"); ?>

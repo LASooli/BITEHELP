@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3ba026e-191d-4423-95c5-17e0ef4a4200" name="Default Changelist" comment="" />
+    <list default="true" id="a3ba026e-191d-4423-95c5-17e0ef4a4200" name="Default Changelist" comment="BITE HELP">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/checkout.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/js/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/js/Checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/Checkout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/orderConfirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/orderConfirmation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/processCartContents.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/processCartContents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/submit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/submit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/validateCheckout.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/validateCheckout.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +29,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2Arb1yK89iHSI8nkXJiQhvWWpbr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,6 +49,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -72,12 +89,24 @@
       <workItem from="1665959743890" duration="916000" />
       <workItem from="1666871054192" duration="770000" />
       <workItem from="1672694152808" duration="43394000" />
-      <workItem from="1673146366107" duration="27037000" />
+      <workItem from="1673146366107" duration="32407000" />
     </task>
+    <task id="LOCAL-00001" summary="BITE HELP">
+      <created>1673319854148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673319854148</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="BITE HELP" />
+    <option name="LAST_COMMIT_MESSAGE" value="BITE HELP" />
   </component>
   <component name="WindowStateProjectService">
     <state x="142" y="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1672865733031">
@@ -87,11 +116,14 @@
     <state x="1259" y="461" key="NewPhpFileDialog" timestamp="1672985312110">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state x="1259" y="449" key="NewPhpFileDialog/0.23.1920.1098@0.23.1920.1098" timestamp="1664436775694" />
     <state x="1259" y="461" key="NewPhpFileDialog/0.23.1920.1128@0.23.1920.1128" timestamp="1672985312110" />
-    <state x="47" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1672983918245">
+    <state x="484" y="239" key="SettingsEditor" timestamp="1673320081104">
+      <screen x="0" y="0" width="1920" height="1200" />
+    </state>
+    <state x="484" y="239" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1673320081104" />
+    <state x="47" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1673423552713">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state x="47" y="276" width="670" height="676" key="search.everywhere.popup/0.23.1920.1128@0.23.1920.1128" timestamp="1672983918245" />
+    <state x="47" y="276" width="670" height="676" key="search.everywhere.popup/0.23.1920.1128@0.23.1920.1128" timestamp="1673423552713" />
   </component>
 </project>

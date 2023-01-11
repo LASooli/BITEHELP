@@ -14,17 +14,12 @@ include('header.php');
 
     </div>
 
-
-    <div>
-        <p>Time elapsed: <?php $time = $_SESSION['time']; echo "$time";?></p>
-        <p>Set time: <?php $setTime = $_SESSION['setTime']; echo"$setTime;";  ?></p>
-    </div>
-
     <div id = "contact-section" style="margin-top: 100px">
-        <h4>If you would like to get in contact, please fill out this contact form</h4>
-        <p>Any feedback about the website, ordering process, or ways we can improve is appreciated.</p>
-        <p>If you would like to update your delivery details, contact quickly.</p>
-
+        <div id="contact-shpeel" style="margin-left: 4%; margin-right: 4%">
+            <h4>If you would like to get in contact, please fill out this contact form</h4>
+            <p>Any feedback about the website, ordering process, or ways we can improve is appreciated.</p>
+            <p>If you would like to update your delivery details, contact quickly.</p>
+        </div>
 
         <?php include_once ('contactForm.php') ?>
     </div>

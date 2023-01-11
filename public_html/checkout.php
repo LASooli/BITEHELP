@@ -3,6 +3,8 @@
 
     <?php
 
+    //IF PRICE CHANGE, change up here, and down in paypal too.
+
 if (session_id() === "") {
     session_start();
 }
@@ -44,7 +46,7 @@ if (isset($_SESSION['quantity'])) {
     <link rel="stylesheet" href="checkout.css">
 
     <script src='js/jquery3.3.js'></script>
-    <script src='js/Checkout.js'></script>
+    <!--<script src='js/Checkout.js'></script>-->
     <script src='js/StripeJava.js'></script>
 
 
@@ -128,9 +130,11 @@ if (isset($_SESSION['quantity'])) {
                                 purchase_units: [
                                     {
                                         amount: {
-                                                "currency_code":"AUD","value":window.sessionStorage.getItem("price"),
+                                                "currency_code":"AUD",
+                                                "value":20.99*window.sessionStorage.getItem('quantity'),
                                         },
                                     },
+
                                 ],
                             }
 
@@ -145,8 +149,6 @@ if (isset($_SESSION['quantity'])) {
                                 console.log(details);
 
                                 const email = details.payer.email_address;
-
-                                const address = details.payer.address;
 
                                 window.sessionStorage.setItem("payerName",payerName)
                                 window.sessionStorage.setItem("email",email)
@@ -287,16 +289,15 @@ if (isset($_SESSION['quantity'])) {
             </form>
         </div>
 
-        <div id="maiaFooter" style="text-align: center">
-            <p>&copy;Maia 2022</p>
+        <div id="footer" style="text-align: center">
+            <p>&copy;BITEHELP 2023</p>
         </div>
     </div>
 
     <div class="right-side">
-        <fieldset id ="cart"></fieldset>
         <div class="order-summary">
             <div class="order-contents">
-                <img src="images/bitehelpmain.jpeg" style='width: 100px' alt="product-img">
+                <img src="images/bitehelpmain.jpeg" alt="product-img" id="summary-product-img">
                 <div id="biteHelpTitle"><h4 style="color: red; display: inline;">BITE</h4><h4 style='display: inline; color: whitesmoke'>HELP</h4></div>
                 <div id="price">$<?php echo"$price" ?></div>
             </div>

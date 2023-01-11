@@ -28,14 +28,15 @@ html, body{
     padding-right:15%;
 
     display: grid;
-    grid-template-rows: 10% 25% 25% 1fr;
-    background-color: #9e9e9d;
+    grid-template-rows: 15% 1fr;
+    background-color: #2b2b2b;
 }
 
 .order-summary{
-    grid-row: 3/3;
+    grid-row: 2/2;
     padding: 12px;
     color: whitesmoke;
+    max-width: 400px;
 }
 
 .order-contents{
@@ -59,7 +60,6 @@ html, body{
 }
 
 .quantity-value-box{
-    background-color: #c0c0c0;
     /*color: #c0c0c0;
 
      */
@@ -88,6 +88,10 @@ html, body{
     border: none;
     background-color: #c0c0c0;
     color: whitesmoke;
+}
+
+#summary-product-img{
+    width: 100px;
 }
 
 label{
@@ -148,7 +152,7 @@ select{
 /*<800px*/
 @media screen and (max-width: 800px) {
     .split{
-        grid-template-rows: 5% 95%;
+        grid-template-rows: 1fr 1fr;
         grid-template-columns: 100% 1fr;
     }
     .left-side{
@@ -159,7 +163,14 @@ select{
     .right-side {
         grid-row: 1/1;
         grid-column: 1/1;
-        background-color: #F0F0F1;
+        /*
+        grid-template-rows: 1fr 100%;
+        grid-template-columns: 1fr 100%;
+
+         */
+        padding: 0;
+        display: flex;
+        justify-content: center;
     }
 
     .right-side {
@@ -175,6 +186,14 @@ select{
         margin-left: 10%;
         padding-top: 20px;
     }
+
+
+    .order-summary{
+        margin: 0;
+        width: 300px;
+    }
+    .order-contents{
+    }
 }
 
 @media screen and (min-width: 1225px) {
@@ -183,6 +202,13 @@ select{
     }
     .left-side{
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #summary-product-img{
+        width: 50px;
+        height: 50px;
     }
 }
 

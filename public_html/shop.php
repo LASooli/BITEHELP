@@ -2,7 +2,7 @@
 
 
 
-//MUST REMEMBER IF CHANGING PRICE to change it in checkout.php too.
+//MUST REMEMBER IF CHANGING PRICE to change it in checkout.php too at start and paypal part.
 function addProduct($title, $price, $image, $descriptionHTML)
 {
     echo "<div class='shop-grid-div'>
@@ -13,7 +13,7 @@ function addProduct($title, $price, $image, $descriptionHTML)
             
                 <div class='buttons'>
                     <form method='post' action='checkout.php'>
-                    <input type='number' id='quantity-selector' name='quantity-selector' min='1' value='";if (isset($_SESSION['quantity-selector'])){$q = $_SESSION['quantity-selector']; echo "$q";}else{echo"1";}  echo"' class='quantity-selector'>
+                    <input type='number' id='quantity-selector' name='quantity-selector' min='1' value='";if (isset($_SESSION['quantity'])){$q = $_SESSION['quantity']; echo "$q";}else{echo"1";}  echo"' class='quantity-selector'>
                     <input value='Buy Now' type='submit' class='buyButton buyNowButton'  onclick='//window.location.href=\"checkout.php\"'>
                     </form>
                 </div>

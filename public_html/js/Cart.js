@@ -3,6 +3,7 @@ var Cart = (function() {
     var pub = {};
 
     function addToCart() {
+        /*
         var itemList, newItem;
         itemList = window.sessionStorage.getItem("cart");
         if (itemList) {
@@ -12,6 +13,7 @@ var Cart = (function() {
         }
         newItem = {};
         /* jshint -W040 */
+        /*
         newItem.title = $(this).parent().parent().parent().find(".itemTitle").html();
 
         newItem.price = $(this).parent().parent().parent().find(".priceDiv").find(".price").html();
@@ -19,8 +21,13 @@ var Cart = (function() {
        // newItem.quantity = $(this);
         newItem.quantity = $(this).parent().find(".quantity-selector")[0].value;
         /* jshint +W040 */
+        /*
         itemList.push(newItem);
-        window.sessionStorage.setItem("cart", JSON.stringify(itemList));
+        //window.sessionStorage.setItem("cart", JSON.stringify(itemList));
+         */
+
+        var quantity = $(this).parent().find(".quantity-selector")[0].value;
+        window.sessionStorage.setItem('quantity', quantity);
     }
 
     pub.setup = function() {
