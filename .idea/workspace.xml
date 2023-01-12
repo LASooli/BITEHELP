@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3ba026e-191d-4423-95c5-17e0ef4a4200" name="Default Changelist" comment="BITE HELP">
+    <list default="true" id="a3ba026e-191d-4423-95c5-17e0ef4a4200" name="Default Changelist" comment="BITE HELP - designed and working&#10;&#10;Only need to update database storage now">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/checkout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/js/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/js/Checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/Checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/htaccess/databaseconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/htaccess/databaseconnect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/orderConfirmation.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/orderConfirmation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/processCartContents.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/processCartContents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/shop.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/submit.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/submit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/validateCheckout.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/validateCheckout.php" afterDir="false" />
     </list>
@@ -89,7 +102,8 @@
       <workItem from="1665959743890" duration="916000" />
       <workItem from="1666871054192" duration="770000" />
       <workItem from="1672694152808" duration="43394000" />
-      <workItem from="1673146366107" duration="32407000" />
+      <workItem from="1673146366107" duration="32601000" />
+      <workItem from="1673489200041" duration="4725000" />
     </task>
     <task id="LOCAL-00001" summary="BITE HELP">
       <created>1673319854148</created>
@@ -98,15 +112,34 @@
       <option name="project" value="LOCAL" />
       <updated>1673319854148</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="BITE HELP - designed and working&#10;&#10;Only need to update database storage now">
+      <created>1673425238739</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673425238739</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BITE HELP" />
-    <option name="LAST_COMMIT_MESSAGE" value="BITE HELP" />
+    <MESSAGE value="BITE HELP - designed and working&#10;&#10;Only need to update database storage now" />
+    <option name="LAST_COMMIT_MESSAGE" value="BITE HELP - designed and working&#10;&#10;Only need to update database storage now" />
   </component>
   <component name="WindowStateProjectService">
     <state x="142" y="398" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1672865733031">
@@ -121,9 +154,17 @@
       <screen x="0" y="0" width="1920" height="1200" />
     </state>
     <state x="484" y="239" key="SettingsEditor/0.0.1920.1200@0.0.1920.1200" timestamp="1673320081104" />
-    <state x="47" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1673423552713">
+    <state x="88" y="328" key="Vcs.Push.Dialog.v2" timestamp="1673425309184">
       <screen x="0" y="23" width="1920" height="1128" />
     </state>
-    <state x="47" y="276" width="670" height="676" key="search.everywhere.popup/0.23.1920.1128@0.23.1920.1128" timestamp="1673423552713" />
+    <state x="88" y="328" key="Vcs.Push.Dialog.v2/0.23.1920.1128@0.23.1920.1128" timestamp="1673425309184" />
+    <state x="724" y="23" width="551" height="730" key="dock-window-1" timestamp="1673491480981">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state x="724" y="23" width="551" height="730" key="dock-window-1/0.23.1920.1128@0.23.1920.1128" timestamp="1673491480981" />
+    <state x="131" y="365" width="670" height="676" key="search.everywhere.popup" timestamp="1673496446862">
+      <screen x="0" y="23" width="1920" height="1128" />
+    </state>
+    <state x="131" y="365" width="670" height="676" key="search.everywhere.popup/0.23.1920.1128@0.23.1920.1128" timestamp="1673496446862" />
   </component>
 </project>

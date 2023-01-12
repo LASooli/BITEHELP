@@ -11,7 +11,6 @@ if (session_id() === "") {
     <?php
 
     //$arr = json_decode(file_get_contents("php://input"));
-    $quantity = $_SESSION['quantity-selector'];
     /** get orders */
     /*
     $orders = simplexml_load_file('htaccess/orders.xml');
@@ -39,6 +38,8 @@ if (session_id() === "") {
     //print_r($priceSum);
 
 */
+$quantity = $_SESSION['quantity-selector'];
+
     $priceSum = $totalCost;
     ?>
 

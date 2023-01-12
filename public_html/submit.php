@@ -11,6 +11,10 @@ if (session_id() === "") {
 
 
 <?php
+
+$quantity = $_SESSION['quantity-selector'];
+
+$priceSum = $totalCost;
 /*
 if (!$priceSum) {
     echo "<h4>Order Already Submitted</h4>";
@@ -31,10 +35,19 @@ if(!empty($_SESSION['stripeToken'])){
     $first_name = $_SESSION['First_name'];
     $last_name = $_SESSION['Last_name'];
     $email = $_SESSION['Email'];
+    $phone = $_SESSION['Phone'];
+    $address = $_SESSION['Address'];
+    $city = $_SESSION['City'];
+    $region = $_SESSION['Region/State'];
+    $postcode = $_SESSION['Postal_code'];
+
+        /*
     $card_num = $_SESSION['card_num'];
+    $card_name = $_SESSION['card_name'];
     $card_cvc = $_SESSION['cvc'];
     $card_exp_month = $_SESSION['exp_month'];
     $card_exp_year = $_SESSION['exp_year'];
+        */
 
     //include Stripe PHP library
     require_once("stripe-php/init.php");
@@ -78,21 +91,12 @@ $charge = \Stripe\Charge::create([
 
 
 
-echo "<script>window.location.href='orderConfirmation.php';</script>";
+//echo "<script>window.location.href='orderConfirmation.php';</script>";
 
 
 
     //check payment status
     //include("webhook.php");
-
-
-
-
-
-
-    //$itemName = "CHANGE THIS TO BE AN ITEM LIST";
-    $itemName = $items;
-    $itemNumber = 1234;
 
 
 
@@ -117,28 +121,43 @@ echo "<script>window.location.href='orderConfirmation.php';</script>";
 
         //order details
         $amount = $charge['amount'];
-        $balance_transaction = $charge['balance_transaction'];
+        $txn_id = $charge['balance_transaction'];
         $currency = $charge['currency'];
         $status = $charge['status'];
         $date = date("Y-m-d H:i:s");
 
 
+        $itemName = "BITEHELP";
 
-        /*
+
+        $itemPrice = $price / $quantity;
+
         //include database config file
         include_once("htaccess/databaseconnect.php");
 
         //insert tansaction data into the database
         $sql =
-"INSERT INTO orders(name,email, item_name,item_number,item_price,item_price_currency,paid_amount,
-paid_amount_currency,txn_id,payment_status,created,modified) VALUES
-('".$name."','".$email."','".$itemName."','".$itemNumber."',".$price."','".$currency."',
-".$amount.",'".$currency."','".$balance_transaction."'
-,'".$status."','".$date."','".$date."')";
+        "
+            INSERT INTO orders (first_name, last_name, email, phone, 
+            address, city, region, postcode, item_name, item_price, 
+            currency, quantity, paid_amount, txn_id, created, modified)
+            VALUES ('$first_name', '$last_name', '$email', '$phone',
+             '$address', '$city', '$region', $postcode, '$itemName', 
+             $itemPrice, '$currency', $quantity, $amount, '$txn_id', NOW(), NOW());
+        ";
 
         $insert = $conn->query($sql);
-        $last_insert_id = $conn->insert_id;
+        //$last_insert_id = $conn->insert_id;
 
+        if($insert === TRUE){
+            echo "";
+            //echo "Successfully inserted into database";
+        } else {
+            //echo  "Error: " . $conn->error;
+            $db_message = "<p>There was an error inserting into database, please contact us and quote this transaction id:</p><p>$txn_id</p>";
+        }
+
+/*
         //if order inserted successfully
         if($last_insert_id){
 
@@ -146,7 +165,9 @@ paid_amount_currency,txn_id,payment_status,created,modified) VALUES
         }else{
             $statusMsg .= "<h4>Error inserting into database</h4>";
         }
-        */
+*/
+
+
 
         //Prevent repeat attempts
         unset($priceSum);

@@ -95,8 +95,8 @@ include("htaccess/validationFunctions.php");
         echo"No. of Errors: $errorcounter";
     }else{
         unset($_SESSION['orderError']); $errorString = "";
-        include('processCartContents.php');
-        //include('submit.php');
+        //include('processCartContents.php');
+        include('submit.php');
 
         }
         //echo '<script> alert(sessionStorage.getItem("cart")); </script>';

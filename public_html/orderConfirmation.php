@@ -14,6 +14,8 @@ include('header.php');
 
     </div>
 
+    <?php  ?>
+
     <div id = "contact-section" style="margin-top: 100px">
         <div id="contact-shpeel" style="margin-left: 4%; margin-right: 4%">
             <h4>If you would like to get in contact, please fill out this contact form</h4>
