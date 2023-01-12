@@ -118,7 +118,7 @@ $charge = \Stripe\Charge::create([
 
         //$setTimeAfter = microtime(true);
 
-
+ ///
         //order details
         $amount = $charge['amount'];
         $txn_id = $charge['balance_transaction'];
